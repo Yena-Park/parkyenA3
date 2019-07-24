@@ -1,0 +1,18 @@
+<nav id="mybooklist">
+  <button *ngFor="let book of myBooks; let i=index"
+  id="button-{{i}}"
+  (click)="onClickBook(i)">
+    {{book.bname}}
+  </button>
+</nav>
+<div class="mybooklist" *ngFor="let book of myBooks; let i=index" id="book-{{i}}">
+  <div class="left">
+    <img src={{book.bpicture}} alt={{book.bname}}>
+  </div>
+  <div class="right">
+    <strong>Book Name</strong><br> {{book.bname}}<br><br>
+    <strong>Author</strong><br> {{book.bauthor}}<br><br>
+    <strong>Genre</strong> <br>{{book.bgenre}}<br><br>
+    <strong>Year</strong><br> {{book.byear}}<br>  <br>
+  </div>
+</div>

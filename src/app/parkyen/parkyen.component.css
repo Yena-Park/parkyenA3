@@ -1,0 +1,25 @@
+nav {
+  height: auto;
+  background: #ccc;
+  padding: 10px;
+}
+#grid {
+  font-size: 100px
+}
+.mybooklist {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 360px;
+  padding: 10px 0;
+}
+.left {
+  grid-area: auto / 1 / auto / auto;
+  text-align: center;
+}
+.left img {
+  height: 360px;
+}
+.right {
+  grid-area: auto / 2 / auto / auto;
+  align-self: center;
+}

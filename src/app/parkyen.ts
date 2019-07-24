@@ -1,0 +1,1 @@
+export class Parkyen { snumber: string; sname: string; sloginname: string; scampus: string; title: string};
